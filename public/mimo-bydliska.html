@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Generátor žiadosti o voličský preukaz
+    </title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <div class="banner">
+        <div class="container">
+            <div class="label label-default pull-right" id="count-down"></div>
+            <div class="pull-left">
+                Voľby do Národnej rady Slovenskej republiky 5. marca 2016
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Ukázať/skryť hlavné menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Brand" src="img/brand-logo.png">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home aria-hidden"></i><span class="sr-only">Domov</span></a>
+                    </li>
+                    <li>
+                        <a href="v-bydlisku.html">Voľby v mieste bydliska</a>
+                    </li>
+                    <li class="active">
+                        <a href="mimo-bydliska.html">Voľby mimo miesta bydliska<span class="sr-only"> (prezeraná stránka)</span></a>
+                    </li>
+                    <li>
+                        <a href="zo-zahranicia.html">Voľby poštou zo zahraničia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="page-header">
+        <h1>Hlasovanie na základe hlasovacieho preukazu</h1>
+    </div>
+    <article>
+        <div class="well">
+            <p>Volič, ktorý má trvalý pobyt na území Slovenskej republiky a v deň konania volieb nebude môcť voliť v mieste svojho trvalého pobytu
+                vo volebnom okrsku, v ktorého zozname voličov je zapísaný, môže <strong>požiadať obec svojho trvalého pobytu o vydanie hlasovacieho preukazu</strong>.
+                Obec na základe žiadosti voličovi vydá hlasovací preukaz a zo zoznamu voličov ho vyčiarkne s poznámkou o vydaní hlasovacieho preukazu. Hlasovací preukaz
+                <strong>oprávňuje na zápis do zoznamu voličov v ktoromkoľvek volebnom okrsku</strong>.</p>
+            <p>Volič môže požiadať o vydanie hlasovacieho preukazu</p>
+            <ul>
+                <li>
+                    <p><strong>osobne</strong>
+                        <br>
+                        najneskôr posledný pracovný deň pred konaním volieb (t.j. <strong>najneskôr 4.3.2016</strong>) v úradných hodinách obce.
+                        Obec vydá hlasovací preukaz bezodkladne.</p>
+                </li>
+                <li>
+                    <p><strong>v listinnej forme</strong>
+                        <br>
+                        tak, aby žiadosť o vydanie hlasovacieho preukazu bola doručená obci najneskôr 15 pracovných dní predo dňom konania volieb
+                        (t.j. <strong>najneskôr 15.2.2016</strong>).
+                    </p>
+                </li>
+                <li>
+                    <p><strong>elektronicky (e-mailom)</strong>
+                        <br>
+                        tak, aby žiadosť o vydanie hlasovacieho preukazu bola doručená obci najneskôr 15 pracovných dní predo dňom konania volieb
+                        (t.j. <strong>najneskôr 15.2.2016</strong>).</p>
+                </li>
+                <li>
+                    <p><strong>prostredníctvom osoby splnomocnenej žiadateľom</strong>
+                        <br>
+                        možno požiadať o vydanie hlasovacieho preukazu najneskôr v posledný deň predo dňom konania volieb (t.j. <strong>najneskôr 4.3.2016</strong>).
+                </li>
+            </ul>
+            <br>
+            <div class="alert alert-info">
+                <span class="fa fa-info-circle pull-left"></span><p>V prípade, že volič požiada o vydanie voličského preukazu v listinnej forme alebo elektronicky, <strong>najneskôr tri pracovné dni od doručenia</strong> žiadosti,
+                    obec zašle hlasovací preukaz voličovi na adresu trvalého pobytu, resp. na adresu uvedenú v žiadosti <strong>doporučenou zásielkou „Do vlastných rúk“</strong>.</p>
+            </div>
+            <div class="alert alert-info">
+                <span class="fa fa-info-circle pull-left"></span><p>Ak volič v písomnej alebo elektronickej žiadosti uvedie, že hlasovací preukaz prevezme iná osoba, musí v žiadosti uviesť jej <strong>meno, priezvisko a číslo občianskeho preukazu</strong>.
+                Táto osoba je povinná prevzatie hlasovacieho preukazu potvrdiť svojím podpisom.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-4 pull-right">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Náležitosti</h2>
+                    </div>
+                    <ul class="list-group text-success">
+                        <li class="list-group-item">Občiansky preukaz</li>
+                        <li class="list-group-item"><a href="#form-panel">Žiadosť o vydanie hlasovacieho preukazu</a></li>
+                        <li class="list-group-item">Hlasovací preukaz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 pull-left">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Postup</h2>
+                    </div>
+                    <div class="panel-body">
+                        <ol>
+                            <li><p>Volič listinnou formou alebo elektronicky (e-mailom) požiada obec svojho trvalého pobytu o vydanie hlasovacieho preukazu tak,
+                                aby <a href="#form-panel">žiadosť</a> o vydanie hlasovacieho preukazu bola doručená obci <strong>najneskôr 15. februára 2016.</strong></p></li>
+                            <li><p>Najneskôr tri pracovné dni od doručenia žiadosti, obec zašle hlasovací preukaz voličovi na adresu trvalého pobytu, resp. na adresu uvedenú v žiadosti
+                                doporučenou zásielkou „Do vlastných rúk“.</p></li>
+                            <li><p>Počas volieb, po príchode do volebnej miestnosti volič preukáže okrskovej volebnej komisii svoju totožnosť predložením <strong>občianskeho preukazu</strong>.
+                                Súčasne s občianskym preukazom predloží volič volebnej komisii <strong>hlasovací preukaz</strong>, ktorý mu okrsková volebná komisia odoberie.</p></li>
+                            <li><p>Ďalší postup je identický ako v prípade hlasovania <a href="v-bydlisku.html">vo vlastnom volebnom okrsku</a></p></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action="#"  id="form-panel">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Formulár na vytvorenie žiadosti o vydanie hlasovacieho preukazu</h2>
+                </div>
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-5">
+                            <div class="panel panel-default">
+                                <div class="panel-body form-horizontal">
+                                    <h4 class="text-primary col-sm-10 col-sm-offset-2">Obecný (mestký, miestny) úrad:</h4>
+                                    <div class="form-group">
+                                        <label for="council-street" class="col-sm-2 control-label">Ulica:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="council-street" id="council-street" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="council-zip" class="col-sm-2 control-label">PSČ:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="council-zip" id="council-zip" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="council-city" class="col-sm-2 control-label">Obec:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="council-city" id="council-city" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="council-email" class="col-sm-2 control-label">E-mail:</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" name="council-email" id="council-email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h3 class="text-center text-primary">Žiadosť o vydanie hlasovacieho preukazu</h3>
+                    <br><br>
+
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="panel panel-default">
+                                <div class="panel-body form-horizontal">
+                                    <div class="form-group">
+                                        <label for="voter-name" class="col-sm-3 control-label">Meno:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="voter-name" id="voter-name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="voter-surname" class="col-sm-3 control-label">Priezvisko:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="voter-surname" id="voter-surname" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="voter-birthname" class="col-sm-3 control-label">Rodné priezvisko:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="voter-birthname" id="voter-birthname">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="voter-number" class="col-sm-3 control-label">Rodné číslo:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="voter-number" id="voter-number" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="voter-form-citizenship" class="col-sm-3 control-label">Štátna príslušnoť:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="voter-number" id="voter-form-citizenship" value="Slovenská republika" disabled>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-primary col-sm-9 col-sm-offset-3">Adresa trvalého bydliska:</h4>
+                                    <div class="form-group">
+                                        <label for="voter-street" class="col-sm-3 control-label">Ulica:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="voter-street" id="voter-street" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="voter-street-number" class="col-sm-3 control-label">Číslo domu:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="voter-street-number" id="voter-street-number" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="voter-city" class="col-sm-3 control-label">Obec:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="voter-city" id="voter-city" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="voter-zip" class="col-sm-3 control-label">PSČ:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="voter-zip" id="voter-zip" required>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-primary col-sm-9 col-sm-offset-3">Elektronický kontakt:</h4>
+                                    <div class="form-group">
+                                        <label for="voter-email" class="col-sm-3 control-label">E-mail:</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" name="voter-email" id="voter-email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h3 class="text-center text-primary">žiadam</h3>
+                    <br>
+                    <p class="text-primary">podľa § 46 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov <strong>o vydanie hlasovacieho preukazu</strong>
+                        pre voľby do Národnej rady Slovenskej republiky v roku 2016.</p>
+                    <br><br>
+
+                    <p class="text-primary">Vydaný hlasovací preukaz žiadam</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="delivery-options" id="radio-permanent" value="permanent" checked>
+                            <span class="text-primary">odoslať na adresu môjho trvalého bydliska</span>
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="delivery-options" id="radio-temporary" value="temporary">
+                            <span class="text-primary">odoslať na korešpondenčnú adresu:</span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="panel panel-default">
+                                <div class="panel-body form-horizontal">
+                                    <fieldset disabled>
+                                        <div class="form-group">
+                                            <label for="delivery-street" class="col-sm-3 control-label">Ulica:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="delivery-street" id="delivery-street" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="delivery-street-number" class="col-sm-3 control-label">Číslo domu:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="delivery-street-number" id="delivery-street-number" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="delivery-city" class="col-sm-3 control-label">Obec:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="delivery-city" id="delivery-city" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="delivery-zip" class="col-sm-3 control-label">PSČ:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="delivery-zip" id="delivery-zip" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="delivery-state" class="col-sm-3 control-label">Štát:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="delivery-state" id="delivery-state" required>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="delivery-options" id="radio-proxy" value="proxy">
+                            <span class="text-primary">odovzdať poverenej osobe:</span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="panel panel-default">
+                                <div class="panel-body form-horizontal">
+                                    <p class="text-primary">Na prevzatie hlasovacieho preukazu podľa § 46 ods. 6 zákona splnomocňujem:</p>
+
+                                    <fieldset disabled>
+                                        <div class="form-group">
+                                            <label for="proxy-name" class="col-sm-3 control-label">Meno:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="proxy-name" id="proxy-name" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="proxy-surname" class="col-sm-3 control-label">Priezvisko:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="proxy-surname" id="proxy-surname" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="proxy-id" class="col-sm-3 control-label">Číslo občianskeho preukazu:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="proxy-id" id="proxy-id" required>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="doc-where" class="col-xs-2 control-label">V:</label>
+                                        <div class="col-xs-10">
+                                            <input type="text" class="form-control" name="doc-where" id="doc-where" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="doc-date" class="col-xs-2 control-label">Dátum:</label>
+                                        <div class="col-xs-10">
+                                            <input type="text" class="form-control" name="doc-date" id="doc-date" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3">
+                            <button class="btn btn-primary pull-left" type="submit" id="button-application">Vytvoriť žiadosť <i class="fa fa-file-pdf-o"></i></button>
+                        </div>
+
+                        <div class="col-xs-12 col-md-9">
+                            <div class="panel-footer-templates-home">
+                                Templáty na <a href="http://www.minv.sk/?nr16-preukaz" target="_blank">stránke ministerstva vnútra</a>:
+                            </div>
+                            <div class="panel-footer-templates-buttons">
+                                <a class="btn btn-default" href="http://www.minv.sk/?nr16-preukaz&subor=230515" target="_blank" role="button">Žiadosť o vydanie preukazu <i class="fa fa-file-text-o"></i></a>
+                                <a class="btn btn-default" href="http://www.minv.sk/?nr16-preukaz&subor=230517" target="_blank" role="button">Žiadosť o vydanie preukazu + splnomocnenie <i class="fa fa-file-text-o"></i></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </article>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="brand-logo">
+            <a href="index.html"><img alt="Brand" src="img/brand-logo.png"></a>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="footer-nav">
+                <div>
+                    <div class="col-md-4 text-center">
+                        <a href="v-bydlisku.html">Voľby v mieste bydliska</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-md-4 text-center">
+                        <a href="mimo-bydliska.html">Voľby mimo miesta bydliska</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-md-4 text-center">
+                        <a href="zo-zahranicia.html">Voľby poštou zo zahraničia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="author-logo">
+            <a href="mailto:admin@cybest.sk"><img alt="Author" src="img/author-logo.png"></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="js/away.js"></script>
+
+</body>
+</html>
