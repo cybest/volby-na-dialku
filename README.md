@@ -1,6 +1,5 @@
 # volby-na-dialku
-Aplikácia na vytvorenie žiadostí a pre voľby poštou zo zahraničia alebo mimo miesta trvalého bydliska
-
+Aplikácia na vytvorenie žiadostí o vydanie hlasovacieho preukazu a voľbu poštou zo zahraničia
 
 ## Štruktúra aplikácie na základe použitých technológií
 Aplikácia je napísaná v HTML5, JavaScripte a CSS3. Postavená je
@@ -73,15 +72,17 @@ hlasovacieho preukazu
     * Formulár na vytvorenie žiadosti o voľbu poštou a čestného 
     vyhlásenia, že volič nemá trvalý pobyt na území SR
  	
-## TODO
+## Dorobiť
 V budúcnosti by malo byť do aplikácie doplnené: 
 
 1. vytváranie pdf dokumentov z formulárov (hlavný účel aplikácie)
 2. korekcia textov a upravenie vzhľadu aplikácie do viac
 user-friendly podoby
-3. SEO a Open Graph meta dát
-4. integrácia so sociálnymi sieťami
-5. ovládanie na vytlačenie formulárov priamo z aplikácie
+3. do formulárov pridať možnossť výberu názvu obce trvalého pobytu
+a automatické doplnenie údajov o zvolenej obci
+4. SEO a Open Graph meta dáta
+5. integrácia so sociálnymi sieťami
+6. ovládanie na vytlačenie formulárov priamo z aplikácie
 
 
 ## Licencia
@@ -91,4 +92,4 @@ tohto sofvéru a pripojených dokumentov (Softvér) bez akýchkoľvek obmedzení
 publikovať, rozširovať a predávať kópie tohto softvéru pod podmienkou, že 
 každá kópia obsahuje súbor LICENSE (alebo súbor s rovnakým obsahom, ktorého
 názov jednoznačne vyjadruje, že sa jedná súbor s licenčnými podmienkami),
-ktorý je súčasťou tohto softvéru.
+ktorý je súčasťou Softvéru.
