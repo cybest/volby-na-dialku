@@ -28,6 +28,36 @@ header i.fa.fa-home {
     display: inline-block;
 }
 
+.town-picker {
+    margin-bottom: 20px;
+}
+
+#select-delivery {
+    margin: 20px 0 30px 0;
+}
+
+#select-delivery .dropdown-menu {
+    min-width: auto;
+    width: 100%;
+}
+
+#signature-parent {
+    margin-bottom: 30px;
+}
+
+#signature-parent button {
+    position: absolute;
+    top: 25px;
+    right : 20px;
+}
+
+#signature {
+    border: 1px dotted #337AB7;
+    border-radius: 4px;
+    margin: 20px 0;
+    cursor:crosshair;
+}
+
 footer {
     background-color: #f8f8f8;
     border: 1px solid #e7e7e7;

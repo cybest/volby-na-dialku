@@ -151,11 +151,49 @@
                         <div class="col-md-6 col-md-offset-5">
                             <div class="panel panel-default">
                                 <div class="panel-body form-horizontal">
-                                    <h4 class="text-primary col-sm-10 col-sm-offset-2">Obecný (mestký, miestny) úrad:</h4>
+                                    <div class="col-xs-12">
+                                        <div class="town-picker">
+                                            <div class="btn-group btn-group-justified" role="group" aria-label="Kraj-okres-obec">
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" class="btn btn-primary dropdown-toggle" id="shiresMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        Kraj <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="shiresMenu" id="shiresMenuList">
+
+                                                    </ul>
+                                                </div>
+
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" class="btn btn-primary dropdown-toggle" id="countiesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        Okres <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="countiesMenu" id="countiesMenuList">
+
+                                                    </ul>
+                                                </div>
+
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" class="btn btn-primary dropdown-toggle" id="townsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        Obec <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="townsMenu" id="townsMenuList">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-primary col-sm-10 col-sm-offset-2">Obecný úrad <span id="council-title"></span>:</h4>
                                     <div class="form-group">
                                         <label for="council-street" class="col-sm-2 control-label">Ulica:</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" name="council-street" id="council-street" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="council-streetnumber" class="col-sm-2 control-label">Číslo:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="council-streetnumber" id="council-streetnumber">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -174,6 +212,15 @@
                                         <label for="council-email" class="col-sm-2 control-label">E-mail:</label>
                                         <div class="col-sm-10">
                                             <input type="email" class="form-control" name="council-email" id="council-email" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-2">
+                                            <div class="alert alert-warning">
+                                                <span class="fa fa-exclamation-triangle pull-left"></span>
+                                                <p>Uvedená e-mailová adresa pochádza z voľne dostupných internetových zdrojov, preto si jej správnosť radšej
+                                                    overte na webovej stránke vášho obecného úradu.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -213,12 +260,12 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="voter-form-citizenship" class="col-sm-3 control-label">Štátna príslušnoť:</label>
+                                        <label for="voter-citizenship" class="col-sm-3 control-label">Štátna príslušnoť:</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="voter-number" id="voter-form-citizenship" value="Slovenská republika" disabled>
+                                            <input type="text" class="form-control" name="voter-number" id="voter-citizenship" value="Slovenská republika" disabled>
                                         </div>
                                     </div>
-                                    <h4 class="text-primary col-sm-9 col-sm-offset-3">Adresa trvalého bydliska:</h4>
+                                    <h4 class="text-primary col-sm-9 col-sm-offset-3">Adresa miesta trvalého pobytu:</h4>
                                     <div class="form-group">
                                         <label for="voter-street" class="col-sm-3 control-label">Ulica:</label>
                                         <div class="col-sm-9">
@@ -226,9 +273,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="voter-street-number" class="col-sm-3 control-label">Číslo domu:</label>
+                                        <label for="voter-streetnumber" class="col-sm-3 control-label">Číslo domu:</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="voter-street-number" id="voter-street-number" required>
+                                            <input type="text" class="form-control" name="voter-street-number" id="voter-streetnumber" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -259,25 +306,33 @@
                     <br>
                     <p class="text-primary">podľa § 46 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov <strong>o vydanie hlasovacieho preukazu</strong>
                         pre voľby do Národnej rady Slovenskej republiky v roku 2016.</p>
-                    <br><br>
+                    <br>
 
-                    <p class="text-primary">Vydaný hlasovací preukaz žiadam</p>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="delivery-options" id="radio-permanent" value="permanent" checked>
-                            <span class="text-primary">odoslať na adresu môjho trvalého bydliska</span>
-                        </label>
+                    <div id="select-delivery">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="text-primary">Vydaný hlasovací preukaz žiadam</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dropdown">
+                                    <button class="btn btn-block btn-primary dropdown-toggle" type="button" id="dropdown-delivery" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        odoslať na adresu môjho trvalého pobytu
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-delivery" id="dropdown-menu-delivery">
+                                        <li class="active"><a href="#" id="select-delivery-permanent">odoslať na adresu môjho trvalého pobytu</a></li>
+                                        <li><a href="#" id="select-delivery-temporary">odoslať na korešpondenčnú adresu</a></li>
+                                        <li><a href="#" id="select-delivery-proxy">odovzdať splnomocnenej osobe</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="delivery-options" id="radio-temporary" value="temporary">
-                            <span class="text-primary">odoslať na korešpondenčnú adresu:</span>
-                        </label>
-                    </div>
+
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
-                            <div class="panel panel-default">
+                            <div class="panel panel-default hide" id="panel-delivery-temporary">
                                 <div class="panel-body form-horizontal">
                                     <fieldset disabled>
                                         <div class="form-group">
@@ -287,9 +342,9 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="delivery-street-number" class="col-sm-3 control-label">Číslo domu:</label>
+                                            <label for="delivery-streetnumber" class="col-sm-3 control-label">Číslo domu:</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="delivery-street-number" id="delivery-street-number" required>
+                                                <input type="text" class="form-control" name="delivery-street-number" id="delivery-streetnumber" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -316,15 +371,10 @@
                         </div>
                     </div>
 
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="delivery-options" id="radio-proxy" value="proxy">
-                            <span class="text-primary">odovzdať poverenej osobe:</span>
-                        </label>
-                    </div>
+
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
-                            <div class="panel panel-default">
+                            <div class="panel panel-default hide" id="panel-delivery-proxy">
                                 <div class="panel-body form-horizontal">
                                     <p class="text-primary">Na prevzatie hlasovacieho preukazu podľa § 46 ods. 6 zákona splnomocňujem:</p>
 
@@ -377,6 +427,15 @@
                             </div>
                         </div>
                     </fieldset>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div id="signature-parent">
+                                <div id="signature"></div>
+                                <button class="btn btn-default" data-toggle="tooltip" title="Resetovať podpis"><span class="fa fa-refresh"></span></button>
+                                <div class="text-primary text-center">Vlastnoručný podpis žiadateľa<br>(nemusí byť úradne osvedčený)</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="panel-footer">
@@ -436,8 +495,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="js/jSignature.min.js"></script>
+<script src='js/pdfmake.min.js'></script>
+<script src="js/vfs_fonts.js"></script>
 <script src="js/main.js"></script>
 <script src="js/away.js"></script>
-
 </body>
 </html>
